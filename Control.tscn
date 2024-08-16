@@ -1,0 +1,222 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+[ext_resource path="res://background.png" type="Texture" id=2]
+[ext_resource path="res://GOTHICB.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://waiticon.png" type="Texture" id=4]
+[ext_resource path="res://selection.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[node name="Control" type="Control"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 957, 462.5 )
+scale = Vector2( 1.00059, 1 )
+texture = ExtResource( 2 )
+
+[node name="startingage" type="LineEdit" parent="."]
+margin_left = 431.388
+margin_top = 211.858
+margin_right = 597.388
+margin_bottom = 252.858
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/read_only = SubResource( 1 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+text = "test"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rf" type="LineEdit" parent="."]
+margin_left = 430.388
+margin_top = 274.858
+margin_right = 596.388
+margin_bottom = 315.858
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/read_only = SubResource( 1 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+text = "test"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="population" type="LineEdit" parent="."]
+margin_left = 429.388
+margin_top = 336.858
+margin_right = 595.388
+margin_bottom = 377.858
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/read_only = SubResource( 1 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+text = "test"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="average" type="Label" parent="."]
+margin_left = 429.388
+margin_top = 470.858
+margin_right = 595.388
+margin_bottom = 511.858
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="median" type="Label" parent="."]
+margin_left = 430.388
+margin_top = 533.858
+margin_right = 596.388
+margin_bottom = 574.858
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mode" type="Label" parent="."]
+margin_left = 429.388
+margin_top = 596.858
+margin_right = 595.388
+margin_bottom = 637.858
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+text = "0"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="startbutton" type="Button" parent="."]
+margin_left = 329.878
+margin_top = 689.184
+margin_right = 604.878
+margin_bottom = 804.184
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="malebutton" type="Button" parent="."]
+margin_left = 209.0
+margin_top = 129.0
+margin_right = 377.0
+margin_bottom = 185.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="femalebutton" type="Button" parent="."]
+margin_left = 403.186
+margin_top = 127.878
+margin_right = 571.186
+margin_bottom = 183.878
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="resetbutton" type="Button" parent="."]
+margin_left = 1783.0
+margin_top = 749.0
+margin_right = 1858.0
+margin_bottom = 816.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="infobutton" type="Button" parent="."]
+margin_left = 1784.12
+margin_top = 31.747
+margin_right = 1859.12
+margin_bottom = 98.747
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="waiting" type="Sprite" parent="."]
+visible = false
+position = Vector2( 959, 462 )
+texture = ExtResource( 4 )
+
+[node name="selectionmale" type="Sprite" parent="."]
+position = Vector2( 295.208, 154.9 )
+texture = ExtResource( 5 )
+
+[node name="selectionfemale" type="Sprite" parent="."]
+visible = false
+position = Vector2( 487.149, 154.9 )
+texture = ExtResource( 5 )
+
+[connection signal="text_changed" from="startingage" to="." method="_on_startingage_text_changed"]
+[connection signal="text_changed" from="rf" to="." method="_on_rf_text_changed"]
+[connection signal="text_changed" from="population" to="." method="_on_population_text_changed"]
+[connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
+[connection signal="pressed" from="malebutton" to="." method="_on_malebutton_pressed"]
+[connection signal="pressed" from="femalebutton" to="." method="_on_femalebutton_pressed"]
+[connection signal="pressed" from="resetbutton" to="." method="_on_resetbutton_pressed"]
+[connection signal="pressed" from="infobutton" to="." method="_on_infobutton_pressed"]
